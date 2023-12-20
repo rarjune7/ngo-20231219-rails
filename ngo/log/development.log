@@ -1,0 +1,988 @@
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 4826c1f57c3946e1984b520613b2de81.vfs.cloud9.us-east-1.amazonaws.com
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 4826c1f57c3946e1984b520613b2de81.vfs.cloud9.us-east-1.amazonaws.com
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 4826c1f57c3946e1984b520613b2de81.vfs.cloud9.us-east-1.amazonaws.com
+Started GET "/" for 24.90.63.159 at 2023-12-19 23:55:03 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 1 pending migration:
+
+db/migrate/20231219234911_create_country_data_finals.rb
+
+
+):
+  
+activerecord (7.1.2) lib/active_record/migration.rb:754:in `check_pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
+activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.2) lib/active_record/migration.rb:648:in `block in call'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `synchronize'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (5.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2023-12-19 23:55:23.878539', '2023-12-19 23:55:23.878545') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCountryDataFinals (20231219234911)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "country_data_finals" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "mobilephones" float, "mortalityunder5" float, "healthexpenditurepercapita" float, "healthexpenditureppercentgdp" float, "population" float, "populationurban" float, "birthrate" float, "lifeexpectancy" float, "gdp" float, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231219234911') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 24.90.63.159 at 2023-12-19 23:55:43 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-3.2.1/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-3.2.1/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.2ms | Allocations: 270)
+Completed 200 OK in 19ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 2596)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-19 23:55:47 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-3.2.1/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-3.2.1/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 209)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-19 23:56:56 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-3.2.1/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-3.2.1/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 208)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-19 23:57:02 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-3.2.1/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-3.2.1/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 208)
+
+
+Started GET "/country_data_finals" for 24.90.63.159 at 2023-12-19 23:57:41 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.1ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 1522)
+  Rendered layout layouts/application.html.erb (Duration: 1190.4ms | Allocations: 95935)
+Completed 200 OK in 1269ms (Views: 1197.2ms | ActiveRecord: 1.6ms | Allocations: 105901)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (2.9ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Afghanistan"], ["mobilephones", 0.0], ["mortalityunder5", 150.0], ["healthexpenditurepercapita", 11.0], ["healthexpenditureppercentgdp", 9.0], ["population", 26697430.0], ["populationurban", 5771984.0], ["birthrate", 50.0], ["lifeexpectancy", 46.0], ["gdp", 2461666315.0], ["created_at", "2023-12-19 23:59:33.474297"], ["updated_at", "2023-12-19 23:59:33.474297"]]
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (6.6ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Albania"], ["mobilephones", 29791.0], ["mortalityunder5", 29.0], ["healthexpenditurepercapita", 75.0], ["healthexpenditureppercentgdp", 6.0], ["population", 3071856.0], ["populationurban", 1280964.0], ["birthrate", 17.0], ["lifeexpectancy", 74.0], ["gdp", 3686649387.0], ["created_at", "2023-12-19 23:59:33.487821"], ["updated_at", "2023-12-19 23:59:33.487821"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (5.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Algeria"], ["mobilephones", 86000.0], ["mortalityunder5", 49.0], ["healthexpenditurepercapita", 63.0], ["healthexpenditureppercentgdp", 3.0], ["population", 30533827.0], ["populationurban", 18259229.0], ["birthrate", 21.0], ["lifeexpectancy", 70.0], ["gdp", 54790058957.0], ["created_at", "2023-12-19 23:59:33.496951"], ["updated_at", "2023-12-19 23:59:33.496951"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (4.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "American Samoa"], ["mobilephones", 1992.0], ["mortalityunder5", 0.0], ["healthexpenditurepercapita", 0.0], ["healthexpenditureppercentgdp", 0.0], ["population", 57625.0], ["populationurban", 51171.0], ["birthrate", 0.0], ["lifeexpectancy", 0.0], ["gdp", 0.0], ["created_at", "2023-12-19 23:59:33.507313"], ["updated_at", "2023-12-19 23:59:33.507313"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.4ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Andorra"], ["mobilephones", 23543.0], ["mortalityunder5", 5.0], ["healthexpenditurepercapita", 1289.0], ["healthexpenditureppercentgdp", 8.0], ["population", 64634.0], ["populationurban", 59722.0], ["birthrate", 11.0], ["lifeexpectancy", 0.0], ["gdp", 1133644295.0], ["created_at", "2023-12-19 23:59:33.513944"], ["updated_at", "2023-12-19 23:59:33.513944"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (5.9ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Angola"], ["mobilephones", 25806.0], ["mortalityunder5", 200.0], ["healthexpenditurepercapita", 15.0], ["healthexpenditureppercentgdp", 2.0], ["population", 13926373.0], ["populationurban", 6823923.0], ["birthrate", 50.0], ["lifeexpectancy", 46.0], ["gdp", 9129180361.0], ["created_at", "2023-12-19 23:59:33.517822"], ["updated_at", "2023-12-19 23:59:33.517822"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (2.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Antigua and Barbuda"], ["mobilephones", 22000.0], ["mortalityunder5", 15.0], ["healthexpenditurepercapita", 411.0], ["healthexpenditureppercentgdp", 5.0], ["population", 77656.0], ["populationurban", 24928.0], ["birthrate", 21.0], ["lifeexpectancy", 0.0], ["gdp", 802526701.0], ["created_at", "2023-12-19 23:59:33.532036"], ["updated_at", "2023-12-19 23:59:33.532036"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (6.5ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Argentina"], ["mobilephones", 6487950.0], ["mortalityunder5", 20.0], ["healthexpenditurepercapita", 689.0], ["healthexpenditureppercentgdp", 9.0], ["population", 36930709.0], ["populationurban", 33274569.0], ["birthrate", 19.0], ["lifeexpectancy", 74.0], ["gdp", 284204000000.0], ["created_at", "2023-12-19 23:59:33.536947"], ["updated_at", "2023-12-19 23:59:33.536947"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Armenia"], ["mobilephones", 17486.0], ["mortalityunder5", 33.0], ["healthexpenditurepercapita", 41.0], ["healthexpenditureppercentgdp", 7.0], ["population", 3076098.0], ["populationurban", 2002540.0], ["birthrate", 13.0], ["lifeexpectancy", 71.0], ["gdp", 1911563665.0], ["created_at", "2023-12-19 23:59:33.551178"], ["updated_at", "2023-12-19 23:59:33.551178"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Aruba"], ["mobilephones", 15000.0], ["mortalityunder5", 0.0], ["healthexpenditurepercapita", 0.0], ["healthexpenditureppercentgdp", 0.0], ["population", 90271.0], ["populationurban", 42157.0], ["birthrate", 14.0], ["lifeexpectancy", 74.0], ["gdp", 1858659293.0], ["created_at", "2023-12-19 23:59:33.554803"], ["updated_at", "2023-12-19 23:59:33.554803"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Australia"], ["mobilephones", 8562000.0], ["mortalityunder5", 6.0], ["healthexpenditurepercapita", 1728.0], ["healthexpenditureppercentgdp", 8.0], ["population", 19153000.0], ["populationurban", 16701416.0], ["birthrate", 13.0], ["lifeexpectancy", 80.0], ["gdp", 416888000000.0], ["created_at", "2023-12-19 23:59:33.569574"], ["updated_at", "2023-12-19 23:59:33.569574"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Austria"], ["mobilephones", 6117000.0], ["mortalityunder5", 6.0], ["healthexpenditurepercapita", 2361.0], ["healthexpenditureppercentgdp", 10.0], ["population", 8011566.0], ["populationurban", 5271610.0], ["birthrate", 10.0], ["lifeexpectancy", 78.0], ["gdp", 192071000000.0], ["created_at", "2023-12-19 23:59:33.573319"], ["updated_at", "2023-12-19 23:59:33.573319"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Azerbaijan"], ["mobilephones", 420400.0], ["mortalityunder5", 67.0], ["healthexpenditurepercapita", 30.0], ["healthexpenditureppercentgdp", 5.0], ["population", 8048600.0], ["populationurban", 4120883.0], ["birthrate", 15.0], ["lifeexpectancy", 67.0], ["gdp", 5272617196.0], ["created_at", "2023-12-19 23:59:33.590139"], ["updated_at", "2023-12-19 23:59:33.590139"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Bahamas, The"], ["mobilephones", 31524.0], ["mortalityunder5", 17.0], ["healthexpenditurepercapita", 1072.0], ["healthexpenditureppercentgdp", 6.0], ["population", 297651.0], ["populationurban", 244074.0], ["birthrate", 18.0], ["lifeexpectancy", 72.0], ["gdp", 6327552000.0], ["created_at", "2023-12-19 23:59:33.594347"], ["updated_at", "2023-12-19 23:59:33.594347"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (6.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Bahrain"], ["mobilephones", 205727.0], ["mortalityunder5", 12.0], ["healthexpenditurepercapita", 488.0], ["healthexpenditureppercentgdp", 4.0], ["population", 638193.0], ["populationurban", 564163.0], ["birthrate", 22.0], ["lifeexpectancy", 74.0], ["gdp", 7970690894.0], ["created_at", "2023-12-19 23:59:33.597530"], ["updated_at", "2023-12-19 23:59:33.597530"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (3.4ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Bangladesh"], ["mobilephones", 279000.0], ["mortalityunder5", 86.0], ["healthexpenditurepercapita", 9.0], ["healthexpenditureppercentgdp", 3.0], ["population", 129592275.0], ["populationurban", 30583777.0], ["birthrate", 27.0], ["lifeexpectancy", 65.0], ["gdp", 47124925462.0], ["created_at", "2023-12-19 23:59:33.613050"], ["updated_at", "2023-12-19 23:59:33.613050"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Barbados"], ["mobilephones", 28467.0], ["mortalityunder5", 17.0], ["healthexpenditurepercapita", 640.0], ["healthexpenditureppercentgdp", 6.0], ["population", 267511.0], ["populationurban", 97106.0], ["birthrate", 12.0], ["lifeexpectancy", 76.0], ["gdp", 2558850048.0], ["created_at", "2023-12-19 23:59:33.622663"], ["updated_at", "2023-12-19 23:59:33.622663"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Belarus"], ["mobilephones", 49353.0], ["mortalityunder5", 14.0], ["healthexpenditurepercapita", 66.0], ["healthexpenditureppercentgdp", 6.0], ["population", 10005000.0], ["populationurban", 6993495.0], ["birthrate", 9.0], ["lifeexpectancy", 69.0], ["gdp", 12736856485.0], ["created_at", "2023-12-19 23:59:33.631618"], ["updated_at", "2023-12-19 23:59:33.631618"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.3ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Belgium"], ["mobilephones", 5629000.0], ["mortalityunder5", 6.0], ["healthexpenditurepercapita", 2025.0], ["healthexpenditureppercentgdp", 9.0], ["population", 10251250.0], ["populationurban", 9953964.0], ["birthrate", 11.0], ["lifeexpectancy", 78.0], ["gdp", 232673000000.0], ["created_at", "2023-12-19 23:59:33.634906"], ["updated_at", "2023-12-19 23:59:33.634906"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (7.7ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Belize"], ["mobilephones", 16812.0], ["mortalityunder5", 27.0], ["healthexpenditurepercapita", 123.0], ["healthexpenditureppercentgdp", 4.0], ["population", 249800.0], ["populationurban", 119404.0], ["birthrate", 30.0], ["lifeexpectancy", 74.0], ["gdp", 832072465.0], ["created_at", "2023-12-19 23:59:33.638173"], ["updated_at", "2023-12-19 23:59:33.638173"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Benin"], ["mobilephones", 55476.0], ["mortalityunder5", 143.0], ["healthexpenditurepercapita", 15.0], ["healthexpenditureppercentgdp", 4.0], ["population", 6517810.0], ["populationurban", 2496321.0], ["birthrate", 43.0], ["lifeexpectancy", 53.0], ["gdp", 2254838685.0], ["created_at", "2023-12-19 23:59:33.656134"], ["updated_at", "2023-12-19 23:59:33.656134"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.3ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Bermuda"], ["mobilephones", 13000.0], ["mortalityunder5", 0.0], ["healthexpenditurepercapita", 0.0], ["healthexpenditureppercentgdp", 0.0], ["population", 62100.0], ["populationurban", 62100.0], ["birthrate", 14.0], ["lifeexpectancy", 78.0], ["gdp", 3480219000.0], ["created_at", "2023-12-19 23:59:33.664965"], ["updated_at", "2023-12-19 23:59:33.664965"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (3.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Bhutan"], ["mobilephones", 0.0], ["mortalityunder5", 89.0], ["healthexpenditurepercapita", 53.0], ["healthexpenditureppercentgdp", 7.0], ["population", 571262.0], ["populationurban", 145101.0], ["birthrate", 27.0], ["lifeexpectancy", 62.0], ["gdp", 427808817.0], ["created_at", "2023-12-19 23:59:33.673333"], ["updated_at", "2023-12-19 23:59:33.673333"]]
+  [1m[36mTRANSACTION (10.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Bolivia"], ["mobilephones", 582620.0], ["mortalityunder5", 82.0], ["healthexpenditurepercapita", 61.0], ["healthexpenditureppercentgdp", 6.0], ["population", 8307248.0], ["populationurban", 5133879.0], ["birthrate", 31.0], ["lifeexpectancy", 63.0], ["gdp", 8397858206.0], ["created_at", "2023-12-19 23:59:33.690764"], ["updated_at", "2023-12-19 23:59:33.690764"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (3.7ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Bosnia and Herzegovina"], ["mobilephones", 93386.0], ["mortalityunder5", 10.0], ["healthexpenditurepercapita", 106.0], ["healthexpenditureppercentgdp", 7.0], ["population", 3693698.0], ["populationurban", 1595678.0], ["birthrate", 11.0], ["lifeexpectancy", 75.0], ["gdp", 5505984456.0], ["created_at", "2023-12-19 23:59:33.707741"], ["updated_at", "2023-12-19 23:59:33.707741"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Botswana"], ["mobilephones", 222190.0], ["mortalityunder5", 96.0], ["healthexpenditurepercapita", 155.0], ["healthexpenditureppercentgdp", 5.0], ["population", 1757925.0], ["populationurban", 935216.0], ["birthrate", 27.0], ["lifeexpectancy", 51.0], ["gdp", 5632391130.0], ["created_at", "2023-12-19 23:59:33.730723"], ["updated_at", "2023-12-19 23:59:33.730723"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (8.7ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Brazil"], ["mobilephones", 23188171.0], ["mortalityunder5", 36.0], ["healthexpenditurepercapita", 265.0], ["healthexpenditureppercentgdp", 7.0], ["population", 174425387.0], ["populationurban", 141633414.0], ["birthrate", 21.0], ["lifeexpectancy", 70.0], ["gdp", 644702000000.0], ["created_at", "2023-12-19 23:59:33.734266"], ["updated_at", "2023-12-19 23:59:33.734266"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Brunei Darussalam"], ["mobilephones", 95000.0], ["mortalityunder5", 9.0], ["healthexpenditurepercapita", 541.0], ["healthexpenditureppercentgdp", 3.0], ["population", 327036.0], ["populationurban", 232523.0], ["birthrate", 23.0], ["lifeexpectancy", 77.0], ["gdp", 6001153318.0], ["created_at", "2023-12-19 23:59:33.750327"], ["updated_at", "2023-12-19 23:59:33.750327"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.9ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Bulgaria"], ["mobilephones", 738000.0], ["mortalityunder5", 21.0], ["healthexpenditurepercapita", 95.0], ["healthexpenditureppercentgdp", 6.0], ["population", 8170172.0], ["populationurban", 5629249.0], ["birthrate", 9.0], ["lifeexpectancy", 72.0], ["gdp", 12903546576.0], ["created_at", "2023-12-19 23:59:33.760414"], ["updated_at", "2023-12-19 23:59:33.760414"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Burkina Faso"], ["mobilephones", 25245.0], ["mortalityunder5", 191.0], ["healthexpenditurepercapita", 11.0], ["healthexpenditureppercentgdp", 5.0], ["population", 12294012.0], ["populationurban", 2040806.0], ["birthrate", 45.0], ["lifeexpectancy", 50.0], ["gdp", 2610945549.0], ["created_at", "2023-12-19 23:59:33.764663"], ["updated_at", "2023-12-19 23:59:33.764663"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (7.3ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Burundi"], ["mobilephones", 16320.0], ["mortalityunder5", 164.0], ["healthexpenditurepercapita", 7.0], ["healthexpenditureppercentgdp", 7.0], ["population", 6374347.0], ["populationurban", 529071.0], ["birthrate", 38.0], ["lifeexpectancy", 46.0], ["gdp", 835334807.0], ["created_at", "2023-12-19 23:59:33.767931"], ["updated_at", "2023-12-19 23:59:33.767931"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Cambodia"], ["mobilephones", 130547.0], ["mortalityunder5", 103.0], ["healthexpenditurepercapita", 17.0], ["healthexpenditureppercentgdp", 6.0], ["population", 12446949.0], ["populationurban", 2103534.0], ["birthrate", 27.0], ["lifeexpectancy", 58.0], ["gdp", 3654031716.0], ["created_at", "2023-12-19 23:59:33.782032"], ["updated_at", "2023-12-19 23:59:33.782032"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Cameroon"], ["mobilephones", 103279.0], ["mortalityunder5", 148.0], ["healthexpenditurepercapita", 27.0], ["healthexpenditureppercentgdp", 5.0], ["population", 15678269.0], ["populationurban", 7823456.0], ["birthrate", 38.0], ["lifeexpectancy", 50.0], ["gdp", 10075040331.0], ["created_at", "2023-12-19 23:59:33.791803"], ["updated_at", "2023-12-19 23:59:33.791803"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Canada"], ["mobilephones", 8727000.0], ["mortalityunder5", 6.0], ["healthexpenditurepercapita", 2082.0], ["healthexpenditureppercentgdp", 9.0], ["population", 30769700.0], ["populationurban", 24461912.0], ["birthrate", 11.0], ["lifeexpectancy", 80.0], ["gdp", 724919000000.0], ["created_at", "2023-12-19 23:59:33.795691"], ["updated_at", "2023-12-19 23:59:33.795691"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Cape Verde"], ["mobilephones", 19729.0], ["mortalityunder5", 46.0], ["healthexpenditurepercapita", 57.0], ["healthexpenditureppercentgdp", 5.0], ["population", 437238.0], ["populationurban", 233485.0], ["birthrate", 29.0], ["lifeexpectancy", 70.0], ["gdp", 539227053.0], ["created_at", "2023-12-19 23:59:33.806893"], ["updated_at", "2023-12-19 23:59:33.806893"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Cayman Islands"], ["mobilephones", 10700.0], ["mortalityunder5", 0.0], ["healthexpenditurepercapita", 0.0], ["healthexpenditureppercentgdp", 0.0], ["population", 40195.0], ["populationurban", 40195.0], ["birthrate", 0.0], ["lifeexpectancy", 0.0], ["gdp", 0.0], ["created_at", "2023-12-19 23:59:33.814584"], ["updated_at", "2023-12-19 23:59:33.814584"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (6.4ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Central African Republic"], ["mobilephones", 4967.0], ["mortalityunder5", 176.0], ["healthexpenditurepercapita", 10.0], ["healthexpenditureppercentgdp", 4.0], ["population", 3701607.0], ["populationurban", 1391804.0], ["birthrate", 39.0], ["lifeexpectancy", 44.0], ["gdp", 959413051.0], ["created_at", "2023-12-19 23:59:33.818638"], ["updated_at", "2023-12-19 23:59:33.818638"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (3.9ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Chad"], ["mobilephones", 5500.0], ["mortalityunder5", 190.0], ["healthexpenditurepercapita", 10.0], ["healthexpenditureppercentgdp", 6.0], ["population", 8222327.0], ["populationurban", 1924025.0], ["birthrate", 48.0], ["lifeexpectancy", 49.0], ["gdp", 1385050964.0], ["created_at", "2023-12-19 23:59:33.837407"], ["updated_at", "2023-12-19 23:59:33.837407"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Channel Islands"], ["mobilephones", 0.0], ["mortalityunder5", 0.0], ["healthexpenditurepercapita", 0.0], ["healthexpenditureppercentgdp", 0.0], ["population", 145330.0], ["populationurban", 44326.0], ["birthrate", 11.0], ["lifeexpectancy", 78.0], ["gdp", 6439703435.0], ["created_at", "2023-12-19 23:59:33.846464"], ["updated_at", "2023-12-19 23:59:33.846464"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Chile"], ["mobilephones", 3401525.0], ["mortalityunder5", 11.0], ["healthexpenditurepercapita", 324.0], ["healthexpenditureppercentgdp", 7.0], ["population", 15419820.0], ["populationurban", 13245625.0], ["birthrate", 17.0], ["lifeexpectancy", 77.0], ["gdp", 75210511780.0], ["created_at", "2023-12-19 23:59:33.856452"], ["updated_at", "2023-12-19 23:59:33.856452"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (5.6ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "China"], ["mobilephones", 85260000.0], ["mortalityunder5", 33.0], ["healthexpenditurepercapita", 44.0], ["healthexpenditureppercentgdp", 5.0], ["population", 1262645000.0], ["populationurban", 452026910.0], ["birthrate", 14.0], ["lifeexpectancy", 72.0], ["gdp", 1198470000000.0], ["created_at", "2023-12-19 23:59:33.866815"], ["updated_at", "2023-12-19 23:59:33.866815"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (3.8ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Colombia"], ["mobilephones", 2256801.0], ["mortalityunder5", 27.0], ["healthexpenditurepercapita", 161.0], ["healthexpenditureppercentgdp", 7.0], ["population", 39764166.0], ["populationurban", 28669964.0], ["birthrate", 23.0], ["lifeexpectancy", 71.0], ["gdp", 100364000000.0], ["created_at", "2023-12-19 23:59:33.877859"], ["updated_at", "2023-12-19 23:59:33.877859"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCountryDataFinal Create (1.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Comoros"], ["mobilephones", 0.0], ["mortalityunder5", 104.0], ["healthexpenditurepercapita", 10.0], ["healthexpenditureppercentgdp", 3.0], ["population", 562469.0], ["populationurban", 158054.0], ["birthrate", 40.0], ["lifeexpectancy", 58.0], ["gdp", 201900820.0], ["created_at", "2023-12-19 23:59:33.884146"], ["updated_at", "2023-12-19 23:59:33.884146"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/country_data_finals" for 24.90.63.159 at 2023-12-19 23:59:56 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (1.1ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 2.3ms | Allocations: 417)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 142.6ms | Allocations: 32440)
+  Rendered layout layouts/application.html.erb (Duration: 146.1ms | Allocations: 34409)
+Completed 200 OK in 152ms (Views: 149.5ms | ActiveRecord: 1.9ms | Allocations: 34671)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-20 00:01:38 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.rvm/gems/ruby-3.2.1/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-3.2.1/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 206)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-20 00:05:01 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.2ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 1.8ms | Allocations: 370)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 117.4ms | Allocations: 12785)
+  Rendered layout layouts/application.html.erb (Duration: 153.3ms | Allocations: 26141)
+Completed 200 OK in 162ms (Views: 151.8ms | ActiveRecord: 7.3ms | Allocations: 27742)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-20 00:08:44 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.2ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 46.6ms | Allocations: 6632)
+  Rendered layout layouts/application.html.erb (Duration: 53.9ms | Allocations: 9956)
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.2ms | Allocations: 10212)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-20 00:11:03 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.2ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 2.7ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 4.3ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.7ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.6ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 67.2ms | Allocations: 6646)
+  Rendered layout layouts/application.html.erb (Duration: 80.3ms | Allocations: 9981)
+Completed 200 OK in 83ms (Views: 82.6ms | ActiveRecord: 0.2ms | Allocations: 10237)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-20 00:13:20 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.2ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 68.1ms | Allocations: 6649)
+  Rendered layout layouts/application.html.erb (Duration: 84.2ms | Allocations: 9929)
+Completed 200 OK in 91ms (Views: 90.3ms | ActiveRecord: 0.2ms | Allocations: 10185)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-20 00:14:00 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.2ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 68.1ms | Allocations: 6628)
+  Rendered layout layouts/application.html.erb (Duration: 87.5ms | Allocations: 9915)
+Completed 200 OK in 91ms (Views: 90.6ms | ActiveRecord: 0.2ms | Allocations: 10171)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-20 00:14:42 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.2ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.5ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 66.2ms | Allocations: 6640)
+  Rendered layout layouts/application.html.erb (Duration: 73.3ms | Allocations: 9962)
+Completed 200 OK in 90ms (Views: 89.6ms | ActiveRecord: 0.2ms | Allocations: 10219)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-20 00:15:33 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.2ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.5ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 58.9ms | Allocations: 6640)
+  Rendered layout layouts/application.html.erb (Duration: 80.8ms | Allocations: 9928)
+Completed 200 OK in 85ms (Views: 84.2ms | ActiveRecord: 0.2ms | Allocations: 10189)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-20 00:16:33 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.2ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 2.5ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.4ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 65.6ms | Allocations: 6643)
+  Rendered layout layouts/application.html.erb (Duration: 72.9ms | Allocations: 9936)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.2ms | Allocations: 10196)
+
+
+Started GET "/country_data_finals/1" for 24.90.63.159 at 2023-12-20 00:17:00 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCountryDataFinal Load (0.2ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals" WHERE "country_data_finals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/country_data_finals_controller.rb:63:in `set_country_data_final'
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/show.html.erb within layouts/application
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 739)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2677)
+Completed 200 OK in 36ms (Views: 14.0ms | ActiveRecord: 0.2ms | Allocations: 8323)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-20 00:18:06 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.2ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 52.6ms | Allocations: 6631)
+  Rendered layout layouts/application.html.erb (Duration: 65.1ms | Allocations: 9973)
+Completed 200 OK in 82ms (Views: 81.4ms | ActiveRecord: 0.2ms | Allocations: 10229)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-20 00:18:09 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.2ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.6ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 51.9ms | Allocations: 6625)
+  Rendered layout layouts/application.html.erb (Duration: 59.6ms | Allocations: 8601)
+Completed 200 OK in 63ms (Views: 62.9ms | ActiveRecord: 0.2ms | Allocations: 8858)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-20 00:19:04 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.2ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.4ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 76.1ms | Allocations: 6646)
+  Rendered layout layouts/application.html.erb (Duration: 90.9ms | Allocations: 10014)
+Completed 200 OK in 103ms (Views: 102.1ms | ActiveRecord: 0.2ms | Allocations: 10271)
+
+
+Started GET "/" for 24.90.63.159 at 2023-12-20 00:22:06 +0000
+Cannot render console from 24.90.63.159! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.2ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals"[0m
+  ↳ app/views/country_data_finals/index.html.erb:6
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.6ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.3ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 69.8ms | Allocations: 6640)
+  Rendered layout layouts/application.html.erb (Duration: 76.9ms | Allocations: 9990)
+Completed 200 OK in 88ms (Views: 87.8ms | ActiveRecord: 0.2ms | Allocations: 10246)
+
+
